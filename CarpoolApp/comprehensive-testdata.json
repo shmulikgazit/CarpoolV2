@@ -1,0 +1,550 @@
+{
+  "parents": [
+    {
+      "name": "Asaf's Dad",
+      "phone": "+972501234501",
+      "cars": [{ "plate": "101-11-111", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["7am"], "afternoon": [] },
+        "Monday": { "morning": [], "afternoon": ["2pm"] },
+        "Tuesday": { "morning": ["7am"], "afternoon": [] },
+        "Wednesday": { "morning": [], "afternoon": [] },
+        "Thursday": { "morning": ["7am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Asaf's Mom",
+      "phone": "+972501234502",
+      "cars": [{ "plate": "101-11-111", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Monday": { "morning": ["7am"], "afternoon": [] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm"] },
+        "Wednesday": { "morning": ["7am"], "afternoon": ["1pm"] },
+        "Thursday": { "morning": [], "afternoon": ["2pm"] }
+      }
+    },
+    {
+      "name": "Noam's Dad",
+      "phone": "+972501234503",
+      "cars": [{ "plate": "102-22-222", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["7am"], "afternoon": [] },
+        "Monday": { "morning": [], "afternoon": [] },
+        "Tuesday": { "morning": ["7am"], "afternoon": [] },
+        "Wednesday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Thursday": { "morning": ["7am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Noam's Mom",
+      "phone": "+972501234504",
+      "cars": [{ "plate": "102-22-222", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["1pm"] },
+        "Monday": { "morning": ["7am", "8am"], "afternoon": ["2pm"] },
+        "Tuesday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Wednesday": { "morning": ["7am"], "afternoon": [] },
+        "Thursday": { "morning": [], "afternoon": ["1pm", "2pm"] }
+      }
+    },
+    {
+      "name": "Tai's Dad",
+      "phone": "+972501234505",
+      "cars": [{ "plate": "103-33-333", "seats": 3, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["8am"], "afternoon": ["2pm"] },
+        "Monday": { "morning": ["8am"], "afternoon": [] },
+        "Tuesday": { "morning": ["8am"], "afternoon": ["2pm"] },
+        "Wednesday": { "morning": [], "afternoon": ["2pm"] },
+        "Thursday": { "morning": ["8am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Tai's Mom",
+      "phone": "+972501234506",
+      "cars": [{ "plate": "103-33-333", "seats": 3, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": [] },
+        "Monday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Tuesday": { "morning": [], "afternoon": [] },
+        "Wednesday": { "morning": ["8am"], "afternoon": [] },
+        "Thursday": { "morning": [], "afternoon": ["2pm"] }
+      }
+    },
+    {
+      "name": "Maor's Mom",
+      "phone": "+972501234507",
+      "cars": [{ "plate": "104-44-444", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["8am"], "afternoon": [] },
+        "Monday": { "morning": ["8am"], "afternoon": ["2pm"] },
+        "Tuesday": { "morning": ["8am"], "afternoon": [] },
+        "Wednesday": { "morning": ["8am"], "afternoon": ["2pm"] },
+        "Thursday": { "morning": ["8am"], "afternoon": ["2pm"] }
+      }
+    },
+    {
+      "name": "Roee's Dad",
+      "phone": "+972501234508",
+      "cars": [{ "plate": "105-55-555", "seats": 7, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["8am"], "afternoon": [] },
+        "Monday": { "morning": [], "afternoon": ["3pm"] },
+        "Tuesday": { "morning": ["8am"], "afternoon": [] },
+        "Wednesday": { "morning": [], "afternoon": ["3pm"] },
+        "Thursday": { "morning": ["8am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Roee's Mom",
+      "phone": "+972501234509",
+      "cars": [{ "plate": "105-55-555", "seats": 7, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["2pm"] },
+        "Monday": { "morning": ["8am"], "afternoon": [] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm", "3pm"] },
+        "Wednesday": { "morning": ["8am"], "afternoon": [] },
+        "Thursday": { "morning": [], "afternoon": ["2pm"] }
+      }
+    },
+    {
+      "name": "Dotan & Matan's Dad",
+      "phone": "+972501234510",
+      "cars": [{ "plate": "106-66-666", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["8am"], "afternoon": [] },
+        "Monday": { "morning": ["8am"], "afternoon": ["1pm", "2pm"] },
+        "Tuesday": { "morning": ["8am"], "afternoon": [] },
+        "Wednesday": { "morning": ["8am"], "afternoon": ["1pm"] },
+        "Thursday": { "morning": ["8am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Dotan & Matan's Mom",
+      "phone": "+972501234511",
+      "cars": [{ "plate": "106-66-666", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["2pm"] },
+        "Monday": { "morning": [], "afternoon": [] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm"] },
+        "Wednesday": { "morning": [], "afternoon": ["2pm"] },
+        "Thursday": { "morning": [], "afternoon": ["2pm", "3pm"] }
+      }
+    },
+    {
+      "name": "Hagai's Dad",
+      "phone": "+972501234512",
+      "cars": [{ "plate": "107-77-777", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["8am"], "afternoon": [] },
+        "Monday": { "morning": [], "afternoon": ["2pm"] },
+        "Tuesday": { "morning": ["8am"], "afternoon": [] },
+        "Wednesday": { "morning": [], "afternoon": ["2pm"] },
+        "Thursday": { "morning": ["8am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Hagai's Mom",
+      "phone": "+972501234513",
+      "cars": [{ "plate": "107-77-777", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Monday": { "morning": ["8am"], "afternoon": [] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm"] },
+        "Wednesday": { "morning": ["8am"], "afternoon": [] },
+        "Thursday": { "morning": [], "afternoon": ["2pm"] }
+      }
+    },
+    {
+      "name": "Yakir's Dad",
+      "phone": "+972501234514",
+      "cars": [{ "plate": "108-88-888", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["8am"], "afternoon": [] },
+        "Monday": { "morning": ["8am"], "afternoon": [] },
+        "Tuesday": { "morning": ["8am"], "afternoon": ["1pm"] },
+        "Wednesday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Thursday": { "morning": ["8am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Yakir's Mom",
+      "phone": "+972501234515",
+      "cars": [{ "plate": "108-88-888", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["2pm"] },
+        "Monday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm"] },
+        "Wednesday": { "morning": ["8am"], "afternoon": [] },
+        "Thursday": { "morning": [], "afternoon": ["1pm", "2pm"] }
+      }
+    },
+    {
+      "name": "Maskit's Dad",
+      "phone": "+972501234516",
+      "cars": [{ "plate": "109-99-999", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["8am"], "afternoon": [] },
+        "Monday": { "morning": [], "afternoon": ["2pm"] },
+        "Tuesday": { "morning": ["8am"], "afternoon": [] },
+        "Wednesday": { "morning": [], "afternoon": ["2pm"] },
+        "Thursday": { "morning": ["8am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Maskit's Mom",
+      "phone": "+972501234517",
+      "cars": [{ "plate": "109-99-999", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Monday": { "morning": ["8am"], "afternoon": [] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm", "3pm"] },
+        "Wednesday": { "morning": ["8am"], "afternoon": [] },
+        "Thursday": { "morning": [], "afternoon": ["2pm"] }
+      }
+    },
+    {
+      "name": "Gittit's Dad",
+      "phone": "+972501234518",
+      "cars": [{ "plate": "110-10-100", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["8am"], "afternoon": [] },
+        "Monday": { "morning": ["8am"], "afternoon": [] },
+        "Tuesday": { "morning": ["8am"], "afternoon": [] },
+        "Wednesday": { "morning": ["8am"], "afternoon": ["1pm"] },
+        "Thursday": { "morning": ["8am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Gittit's Mom",
+      "phone": "+972501234519",
+      "cars": [{ "plate": "110-10-100", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["2pm"] },
+        "Monday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm"] },
+        "Wednesday": { "morning": [], "afternoon": ["2pm"] },
+        "Thursday": { "morning": [], "afternoon": ["1pm", "2pm"] }
+      }
+    },
+    {
+      "name": "Nevo's Dad",
+      "phone": "+972501234520",
+      "cars": [{ "plate": "111-11-110", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["8am"], "afternoon": [] },
+        "Monday": { "morning": [], "afternoon": ["2pm", "3pm"] },
+        "Tuesday": { "morning": ["8am"], "afternoon": [] },
+        "Wednesday": { "morning": [], "afternoon": ["2pm"] },
+        "Thursday": { "morning": ["8am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Nevo's Mom",
+      "phone": "+972501234521",
+      "cars": [{ "plate": "111-11-110", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Monday": { "morning": ["8am"], "afternoon": [] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm"] },
+        "Wednesday": { "morning": ["8am"], "afternoon": [] },
+        "Thursday": { "morning": [], "afternoon": ["2pm"] }
+      }
+    },
+    {
+      "name": "Moria's Dad",
+      "phone": "+972501234522",
+      "cars": [{ "plate": "112-22-220", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["8am"], "afternoon": [] },
+        "Monday": { "morning": ["8am"], "afternoon": [] },
+        "Tuesday": { "morning": ["8am"], "afternoon": ["1pm"] },
+        "Wednesday": { "morning": ["8am"], "afternoon": [] },
+        "Thursday": { "morning": ["8am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Moria's Mom",
+      "phone": "+972501234523",
+      "cars": [{ "plate": "112-22-220", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["2pm"] },
+        "Monday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm"] },
+        "Wednesday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Thursday": { "morning": [], "afternoon": ["2pm", "3pm"] }
+      }
+    },
+    {
+      "name": "Ido's Dad",
+      "phone": "+972501234524",
+      "cars": [{ "plate": "113-33-330", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["9am"], "afternoon": [] },
+        "Monday": { "morning": ["9am"], "afternoon": ["3pm"] },
+        "Tuesday": { "morning": ["9am"], "afternoon": [] },
+        "Wednesday": { "morning": ["9am"], "afternoon": ["3pm"] },
+        "Thursday": { "morning": ["9am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Ido's Mom",
+      "phone": "+972501234525",
+      "cars": [{ "plate": "113-33-330", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["2pm"] },
+        "Monday": { "morning": [], "afternoon": [] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm", "3pm"] },
+        "Wednesday": { "morning": [], "afternoon": [] },
+        "Thursday": { "morning": [], "afternoon": ["2pm", "3pm"] }
+      }
+    },
+    {
+      "name": "Nadav's Dad",
+      "phone": "+972501234526",
+      "cars": [{ "plate": "114-44-440", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["9am"], "afternoon": [] },
+        "Monday": { "morning": ["9am"], "afternoon": [] },
+        "Tuesday": { "morning": ["9am"], "afternoon": ["2pm"] },
+        "Wednesday": { "morning": ["9am"], "afternoon": [] },
+        "Thursday": { "morning": ["9am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Nadav's Mom",
+      "phone": "+972501234527",
+      "cars": [{ "plate": "114-44-440", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["1pm"] },
+        "Monday": { "morning": [], "afternoon": ["1pm", "2pm", "3pm"] },
+        "Tuesday": { "morning": [], "afternoon": [] },
+        "Wednesday": { "morning": [], "afternoon": ["1pm", "2pm", "3pm"] },
+        "Thursday": { "morning": [], "afternoon": ["2pm", "3pm"] }
+      }
+    },
+    {
+      "name": "Gaia's Dad",
+      "phone": "+972501234528",
+      "cars": [{ "plate": "115-55-550", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["9am"], "afternoon": [] },
+        "Monday": { "morning": ["9am"], "afternoon": [] },
+        "Tuesday": { "morning": ["9am"], "afternoon": [] },
+        "Wednesday": { "morning": ["9am"], "afternoon": ["2pm"] },
+        "Thursday": { "morning": ["9am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Gaia's Mom",
+      "phone": "+972501234529",
+      "cars": [{ "plate": "115-55-550", "seats": 4, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Monday": { "morning": [], "afternoon": ["1pm", "2pm"] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm", "3pm"] },
+        "Wednesday": { "morning": [], "afternoon": [] },
+        "Thursday": { "morning": [], "afternoon": ["2pm", "3pm"] }
+      }
+    },
+    {
+      "name": "Shaiel's Dad",
+      "phone": "+972501234530",
+      "cars": [{ "plate": "116-66-660", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": ["9am"], "afternoon": [] },
+        "Monday": { "morning": ["9am"], "afternoon": ["3pm"] },
+        "Tuesday": { "morning": ["9am"], "afternoon": [] },
+        "Wednesday": { "morning": ["9am"], "afternoon": ["3pm"] },
+        "Thursday": { "morning": ["9am"], "afternoon": [] }
+      }
+    },
+    {
+      "name": "Shaiel's Mom",
+      "phone": "+972501234531",
+      "cars": [{ "plate": "116-66-660", "seats": 5, "isDefault": true }],
+      "availability": {
+        "Sunday": { "morning": [], "afternoon": ["2pm"] },
+        "Monday": { "morning": [], "afternoon": [] },
+        "Tuesday": { "morning": [], "afternoon": ["2pm", "3pm"] },
+        "Wednesday": { "morning": [], "afternoon": [] },
+        "Thursday": { "morning": [], "afternoon": ["2pm", "3pm"] }
+      }
+    }
+  ],
+  "kids": [
+    {
+      "name": "Asaf",
+      "phone": "+972521000001",
+      "grade": 7,
+      "parentPhone": "+972501234501",
+      "timetable": { "morning": "7am", "afternoon": "2pm" },
+      "preferredCarmates": ["Noam"],
+      "notes": "Dating Noam - prefer same car"
+    },
+    {
+      "name": "Noam",
+      "phone": "+972521000002",
+      "grade": 7,
+      "parentPhone": "+972501234503",
+      "timetable": { "morning": "7am", "afternoon": "1pm" },
+      "preferredCarmates": ["Asaf"],
+      "notes": "Dating Asaf - prefer same car"
+    },
+    {
+      "name": "Tai",
+      "phone": "+972521000003",
+      "grade": 6,
+      "parentPhone": "+972501234505",
+      "timetable": { "morning": "8am", "afternoon": "2pm" }
+    },
+    {
+      "name": "Maor",
+      "phone": "+972521000004",
+      "grade": 6,
+      "parentPhone": "+972501234507",
+      "timetable": { "morning": "8am", "afternoon": "2pm" },
+      "notes": "Single parent (Mom only)"
+    },
+    {
+      "name": "Roee",
+      "phone": "+972521000005",
+      "grade": 6,
+      "parentPhone": "+972501234508",
+      "timetable": { "morning": "8am", "afternoon": "2pm" }
+    },
+    {
+      "name": "Dotan",
+      "phone": "+972521000006",
+      "grade": 5,
+      "parentPhone": "+972501234510",
+      "timetable": { "morning": "8am", "afternoon": "2pm" },
+      "siblingPhone": "+972521000007",
+      "notes": "Twin of Matan - parent prefers both together"
+    },
+    {
+      "name": "Matan",
+      "phone": "+972521000007",
+      "grade": 5,
+      "parentPhone": "+972501234510",
+      "timetable": { "morning": "8am", "afternoon": "2pm" },
+      "siblingPhone": "+972521000006",
+      "notes": "Twin of Dotan - parent prefers both together"
+    },
+    {
+      "name": "Hagai",
+      "phone": "+972521000008",
+      "grade": 5,
+      "parentPhone": "+972501234512",
+      "timetable": { "morning": "8am", "afternoon": "2pm" }
+    },
+    {
+      "name": "Yakir",
+      "phone": "+972521000009",
+      "grade": 5,
+      "parentPhone": "+972501234514",
+      "timetable": { "morning": "8am", "afternoon": "1pm" }
+    },
+    {
+      "name": "Maskit",
+      "phone": "+972521000010",
+      "grade": 4,
+      "parentPhone": "+972501234516",
+      "timetable": { "morning": "8am", "afternoon": "2pm" }
+    },
+    {
+      "name": "Gittit",
+      "phone": "+972521000011",
+      "grade": 4,
+      "parentPhone": "+972501234518",
+      "timetable": { "morning": "8am", "afternoon": "2pm" }
+    },
+    {
+      "name": "Nevo",
+      "phone": "+972521000012",
+      "grade": 4,
+      "parentPhone": "+972501234520",
+      "timetable": { "morning": "8am", "afternoon": "2pm" }
+    },
+    {
+      "name": "Moria",
+      "phone": "+972521000013",
+      "grade": 4,
+      "parentPhone": "+972501234522",
+      "timetable": { "morning": "8am", "afternoon": "2pm" }
+    },
+    {
+      "name": "Ido",
+      "phone": "+972521000014",
+      "grade": 3,
+      "parentPhone": "+972501234524",
+      "timetable": { "morning": "9am", "afternoon": "3pm" }
+    },
+    {
+      "name": "Nadav",
+      "phone": "+972521000015",
+      "grade": 3,
+      "parentPhone": "+972501234526",
+      "timetable": { "morning": "9am", "afternoon": "3pm" }
+    },
+    {
+      "name": "Gaia",
+      "phone": "+972521000016",
+      "grade": 3,
+      "parentPhone": "+972501234528",
+      "timetable": { "morning": "9am", "afternoon": "2pm" }
+    },
+    {
+      "name": "Shaiel",
+      "phone": "+972521000017",
+      "grade": 3,
+      "parentPhone": "+972501234530",
+      "timetable": { "morning": "9am", "afternoon": "3pm" }
+    }
+  ],
+  "school": {
+    "name": "Meitarim Raanana",
+    "grades": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  "expectedScenarios": {
+    "Sunday": {
+      "morning": {
+        "7am": {
+          "description": "Early birds - Asaf and Noam together",
+          "cars": 2,
+          "kids": 2
+        },
+        "8am": {
+          "description": "Main rush - 12 kids in multiple cars",
+          "cars": 4,
+          "kids": 12,
+          "notes": "Dotan & Matan should be together if possible"
+        },
+        "9am": {
+          "description": "Younger grades - 4 kids",
+          "cars": 1,
+          "kids": 4
+        }
+      },
+      "afternoon": {
+        "1pm": {
+          "description": "Early finish",
+          "cars": 2,
+          "kids": 3
+        },
+        "2pm": {
+          "description": "Main pickup - most kids",
+          "cars": 5,
+          "kids": 11
+        },
+        "3pm": {
+          "description": "Late finish - younger grades",
+          "cars": 1,
+          "kids": 3
+        }
+      }
+    }
+  }
+}
+
