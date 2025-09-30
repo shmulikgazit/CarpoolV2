@@ -1,0 +1,113 @@
+{
+  "parents": [
+    {
+      "id": "P1",
+      "name": "Parent A",
+      "cars": [
+        {
+          "plate": "123-45-678",
+          "seats": 5,
+          "default": true
+        }
+      ],
+      "availability": {
+        "Mon": [
+          "morning"
+        ],
+        "Tue": [
+          "morning"
+        ],
+        "Wed": [
+          "morning"
+        ],
+        "Thu": [
+          "morning"
+        ]
+      },
+      "phone": "+97250000001"
+    },
+    {
+      "id": "P2",
+      "name": "Parent B",
+      "cars": [
+        {
+          "plate": "234-56-789",
+          "seats": 4,
+          "default": true
+        }
+      ],
+      "availability": {
+        "Tue": [
+          "morning",
+          "afternoon"
+        ],
+        "Thu": [
+          "morning",
+          "afternoon"
+        ]
+      },
+      "phone": "+97250000002"
+    },
+    {
+      "id": "P3",
+      "name": "Parent C",
+      "cars": [],
+      "availability": {},
+      "observer": true,
+      "phone": "+97250000003"
+    }
+  ],
+  "kids": [
+    {
+      "id": "K1",
+      "name": "Kid 1",
+      "grade": 3,
+      "timetable": {
+        "morning": "8am",
+        "afternoon": "2pm"
+      },
+      "parent": "P1",
+      "phone": "+97251000001"
+    },
+    {
+      "id": "K2",
+      "name": "Kid 2",
+      "grade": 3,
+      "timetable": {
+        "morning": "8am",
+        "afternoon": "1pm"
+      },
+      "parent": "P2",
+      "phone": "+97251000002"
+    },
+    {
+      "id": "K3",
+      "name": "Kid 3",
+      "grade": 5,
+      "timetable": {
+        "morning": "9am",
+        "afternoon": "3pm"
+      },
+      "parent": "P3",
+      "phone": "+97251000003"
+    }
+  ],
+  "schools": [
+    {
+      "id": "S1",
+      "name": "Meitarim Raanana",
+      "grades": [
+        3,
+        5
+      ]
+    }
+  ],
+  "scenarios": [
+    "Parent withdrawal mid-assignment",
+    "Multiple kids request same car",
+    "Parent abroad (disabled availability)",
+    "Taxi fallback ride",
+    "Car seat limit exceeded",
+    "Kid absent from school"
+  ]
+}

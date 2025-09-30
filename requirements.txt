@@ -1,0 +1,36 @@
+This is a requirements doc for a carpool application that can be installed on kids and parents mobile phones.
+A child should be able to set their weekly timetable for school (going there at 7/8/9am and back 1pm/2pm/3pm as needed), the parents will be able to set their daily availability, and the app will sort out the kids to the cars according to seats availability (with some flexibility to change rides if it doesn't matter which car takes them, like wanting to ride with a friend etc).
+
+1. a back-end side (firebase) to handle parents and kids management, how many places are available in their car by default (with option to change it per offered ride), define a weekly default parents roster and to persist the next carpool. This backend will have to be hosted on the public internet.
+
+
+2. a client side that can show the next carpool to both parents and kids, so parents can change their availability and kids can flag they need a ride or join one of the parents' cars. The client side needs to be presented well on a mobile phone (android or IOS).
+
+
+
+3. Parents can enable or disable their availability on the default scheduled carpool. If a parent was scheduled to drive and disables, their car will be removed from the carpool if no kids have selected them yet for a ride. If kids already selected the ride, the backend will show to all the enabled parents and kids on the carpool, that the kids (list their names) are requested to join other rides and the parent's graphic car should be colored red. When the kids on that car change their ride selection and no kids are assigned to that car, it can be removed from the carpool.
+
+	a. We should consider a running chat at the bottom and above it a notifications area like "Parent A is requesting to withdraw" (the car in red), etc.
+
+4. There are two daily shifts, morning and afternoon. A kid can mark him/herself as needing a ride the next morning or in the afternoon, and the requested hour from a dropdown list (7am/8am/9am for morning, 1pm/2pm/3pm for afternoon). The default hour will be taken from the kid's timetable. The kid will assigned automatically to a car available on that hour, but can choose another car easily based on space availability and parents' requests.
+
+
+
+5. The client side application will offer settings dialogs to define a parent or a kid. For parents, it will let define new cars or choose already defined cars. Each car will have a defined passenger availability (maximum). A parent can define their name and their daily default availability (Sunday to Thursday, morning and afternoon carpools). A kid can define their name and their daily default schedule.
+
+	a. The welcome screen to the app should be shown the first time the app is ran and if it can't find a kid or parent already defined. It should ask for the phone number (with international prefix dropdown) and a lookup should be done if this phone number exists for a kid or parent. If it is found, show the kid or parent settings screen with the fetched data to edit any changes and Save.
+	b. If possible, let's disregard any unnecessary authentication for the time being.
+	c. A parent can have no cars defined if the parent does not drive but wants to keep tabs on their kid and see/comment on the upcoming shifts
+	d. Parents can define a car by it's plate number. A car should be defined once, and if a spouse types a license plate of a car already defined, it should be loaded
+	e. A parent can have a default car and if the parent is on shift, this car will be shown, but the parent should be able to easily switch the offered car if they didn't take their default car for the next shift.
+	f. A kid or a parent can define a school and a grade and the app should be able to search and fine schools and grades already defined (taking into account one can type Meitarim Raanana or Raanana Meitarim - which is the same school - so it should be fofered as a possible definition already in the system)
+	g. The app should take into account that parents can have more than one kid in the school, in the same grade or another
+
+6. The client side will show at all times to both kids and parents, graphically, the next carpool schedule (all three pick up times), with car icons and kids' names. The car icon will show the number of free seats remaining. Below, it will show notifications for kids that are requested to find another ride (a parent would like to remove their availability) and kids that are currently not assigned to any ride and need one.
+
+
+
+7. A parent can disable their availability with a main switch (when they are abroad for example). In this case, their car(s) will not be shown in the carpools. A kid should also have a similar switch to denote they are not in school for a few days etc.
+
+
+8. A parent will have an option to offer a taxi ride instead of coming to pick up the kids. In this case, the car icon will be shown as a taxi with 4 available seats.

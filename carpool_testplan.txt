@@ -1,0 +1,33 @@
+Carpool App - Test Plan
+
+1. Testing Methodologies
+- Unit tests: Assignment logic, seat limits, withdrawals, requests.
+- Integration tests: Firebase sync between devices.
+- UI tests: Schedule visualization, toggles, availability switches.
+- Stress tests: Simulate 50+ families joining/leaving carpools.
+- Usability tests: Small parent group pilot.
+
+2. Key Test Cases
+1. Kid requests ride → assigned to available parent automatically.
+2. Parent disables availability after assignment → kids flagged, car turns red.
+3. Parent adds new car → system shows as option.
+4. Spouse adds same license plate → loads existing car definition.
+5. Kid requests to ride with friend → both assigned if seats available.
+6. Parent offers taxi → shown as taxi with 4 seats.
+7. Parent disables for whole week → cars hidden from schedules.
+8. Kid disables for whole week → removed from schedule.
+9. Parent with multiple kids → all children linked and scheduled properly.
+10. Stress test with 50 parents and 100 kids → assignment completes <3s.
+
+3. Test Data Strategy
+- Dataset includes parents with/without cars, multiple kids, different schedules.
+- Edge cases: car at capacity, no available parents, parents withdrawing late.
+- JSON test data provided separately.
+
+
+4. Identity & Login Test Cases
+11. New parent enters phone number not in backend → setup flow triggered.
+12. Existing parent enters phone number → profile and configuration restored.
+13. Existing kid enters phone number → timetable and linked parent restored.
+14. No email/password required → confirm frictionless login works.
+15. SMS verification deferred → confirm login works without OTP flow.

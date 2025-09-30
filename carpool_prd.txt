@@ -1,0 +1,45 @@
+Carpool App - Product Requirements Document (PRD)
+
+1. Overview
+- Goal: Simplify daily carpool coordination between parents and children.
+- Primary Users: Parents, children (school age), and indirectly schools.
+- Platforms: iOS & Android (mobile-first), Firebase backend.
+
+2. Core Features
+- Timetable management (kids).
+- Availability management (parents, cars).
+- Carpool assignment engine (auto + manual adjustments).
+- Visual schedule display (cars, seats, kids’ names).
+- Conflict handling (withdrawals, unassigned kids, reassignment).
+- Notifications & chat.
+- Settings & profiles (parents, kids, cars, schools).
+- Taxi fallback option.
+
+3. User Stories
+- As a parent, I want to mark myself unavailable for a shift so the system can reassign kids.
+- As a kid, I want to request to ride with a friend so I feel happier in carpool.
+- As a parent, I want to see a live schedule with car and seat availability so I can adjust quickly.
+- As a parent with multiple kids, I want all my kids’ schedules linked to me.
+
+4. Functional Requirements
+- Parents can define cars, plate numbers, availability, and offer taxis.
+- Kids define timetable, grade, and request rides.
+- Assignments must recalculate dynamically based on availability.
+- Cars must not exceed defined seat capacity.
+- Conflict notifications (withdrawals, unassigned kids) displayed to all relevant users.
+- Multiple kids can be linked to one parent.
+
+5. Non-Functional Requirements
+- Performance: Carpool assignments must update in <3 seconds.
+- Scalability: Support up to 200 families per school.
+- Reliability: Firebase data persistence.
+- Usability: Intuitive mobile UI for non-technical parents.
+- Availability: 99.5% uptime for backend services.
+
+
+6. Identity & Authentication
+- Phone number is the **unique identifier** for both parents and kids (no email, no passwords).
+- SMS verification is **deferred** for now, but designed to be added later without breaking compatibility.
+- When a user enters their phone number, the backend will look up existing configuration (role, settings, cars, kids, timetable).
+- If found, the app will restore the data for quick continuation on a new phone.
+- If not found, the app will guide the user through setup as parent or kid.
