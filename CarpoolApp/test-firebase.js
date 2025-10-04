@@ -2,14 +2,17 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore';
 
+// Load Firebase config from environment variables
+// Note: This file uses ES6 imports, so you'll need to convert it to CommonJS
+// or use a different approach to load .env
 const firebaseConfig = {
-    apiKey: "AIzaSyABTC6Ow-sOR5zyozhaLzTCDcFD3vYi6uw",
-    authDomain: "carpoolv2-c05f3.firebaseapp.com",
-    projectId: "carpoolv2-c05f3",
-    storageBucket: "carpoolv2-c05f3.firebasestorage.app",
-    messagingSenderId: "861636228670",
-    appId: "1:861636228670:web:10c705581d43dd7ca1436f",
-    measurementId: "G-LYEVEL0QDK"
+    apiKey: process.env.FIREBASE_API_KEY || "YOUR_NEW_API_KEY_HERE",
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN || "carpoolv2-c05f3.firebaseapp.com",
+    projectId: process.env.FIREBASE_PROJECT_ID || "carpoolv2-c05f3",
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET || "carpoolv2-c05f3.firebasestorage.app",
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID || "861636228670",
+    appId: process.env.FIREBASE_APP_ID || "YOUR_NEW_APP_ID_HERE",
+    measurementId: process.env.FIREBASE_MEASUREMENT_ID || "G-LYEVEL0QDK"
 };
 
 // Initialize Firebase

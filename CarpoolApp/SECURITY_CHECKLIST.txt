@@ -1,0 +1,99 @@
+═══════════════════════════════════════════════════════════════
+  🚨 URGENT SECURITY FIX CHECKLIST 🚨
+═══════════════════════════════════════════════════════════════
+
+GitHub detected your Firebase API key was exposed in your code.
+Follow these steps IN ORDER to fix it:
+
+═══════════════════════════════════════════════════════════════
+
+□ STEP 1: REVOKE THE OLD KEY (DO THIS FIRST!)
+  
+  1. Go to: https://console.cloud.google.com/
+  2. Select project: carpoolv2-c05f3
+  3. Click: APIs & Services → Credentials
+  4. Find: AIzaSyABTC6Ow-sOR5zyozhaLzTCDcFD3vYi6uw
+  5. Click the DELETE button
+  
+  ✓ Old key has been deleted
+
+═══════════════════════════════════════════════════════════════
+
+□ STEP 2: GET NEW FIREBASE CREDENTIALS
+  
+  1. Go to: https://console.firebase.google.com/
+  2. Select: carpoolv2-c05f3
+  3. Click: Gear icon → Project Settings
+  4. Scroll to: "Your apps" section
+  5. Copy the new configuration values
+  
+  Write down your new credentials:
+  - New API Key: _________________________________
+  - New App ID:  _________________________________
+
+═══════════════════════════════════════════════════════════════
+
+□ STEP 3: CREATE .ENV FILE (EASY METHOD)
+  
+  Open PowerShell in the CarpoolApp folder:
+  
+  cd C:\Users\shmulikg\CarpoolV2\CarpoolApp
+  .\create-env-file.ps1
+  
+  Follow the prompts and enter your NEW credentials from Step 2.
+  
+  ✓ .env file created
+
+═══════════════════════════════════════════════════════════════
+
+□ STEP 4: VERIFY .ENV IS PROTECTED
+  
+  cd C:\Users\shmulikg\CarpoolV2\CarpoolApp
+  git status
+  
+  You should NOT see .env in the output.
+  
+  ✓ .env is not tracked by git
+
+═══════════════════════════════════════════════════════════════
+
+□ STEP 5: TEST THE APP
+  
+  cd C:\Users\shmulikg\CarpoolV2\CarpoolApp
+  npx expo start --clear
+  
+  ✓ App starts without errors
+  ✓ Can connect to Firebase
+
+═══════════════════════════════════════════════════════════════
+
+WHAT WAS FIXED?
+
+✅ All 13 files updated to use environment variables
+✅ .gitignore updated to block .env files
+✅ react-native-dotenv installed for React Native
+✅ dotenv installed for Node.js scripts
+✅ babel.config.js created
+✅ Centralized Firebase config created
+✅ Documentation updated
+
+═══════════════════════════════════════════════════════════════
+
+IMPORTANT REMINDERS:
+
+⚠️  NEVER commit the .env file to git
+⚠️  NEVER share your .env file with anyone
+⚠️  NEVER hardcode API keys in code again
+⚠️  Each developer needs their own .env file
+
+═══════════════════════════════════════════════════════════════
+
+NEED HELP?
+
+See these files for detailed instructions:
+- SECURITY_SUMMARY.md - Complete summary of changes
+- SECURITY_FIX_INSTRUCTIONS.md - Detailed step-by-step guide
+- env.example.txt - Template for your .env file
+
+═══════════════════════════════════════════════════════════════
+

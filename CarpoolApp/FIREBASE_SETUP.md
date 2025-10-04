@@ -24,20 +24,27 @@
 4. Select a location close to your users
 5. Click "Done"
 
-## 4. Update Firebase Configuration
+## 4. Update Firebase Configuration (SECURE METHOD)
 
-Replace the configuration in `src/services/firebase.js` with your actual Firebase config:
+**IMPORTANT**: Never hardcode API keys in your code! Use environment variables instead.
 
-```javascript
-const firebaseConfig = {
-  apiKey: "your-actual-api-key",
-  authDomain: "your-project-id.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project-id.appspot.com",
-  messagingSenderId: "your-sender-id",
-  appId: "your-app-id"
-};
+1. **Create a `.env` file** in the `CarpoolApp` folder
+2. **Copy the template** from `env.example.txt`
+3. **Fill in your Firebase credentials** from step 2:
+
 ```
+FIREBASE_API_KEY=your-actual-api-key
+FIREBASE_AUTH_DOMAIN=your-project-id.firebaseapp.com
+FIREBASE_PROJECT_ID=your-project-id
+FIREBASE_STORAGE_BUCKET=your-project-id.appspot.com
+FIREBASE_MESSAGING_SENDER_ID=your-sender-id
+FIREBASE_APP_ID=your-app-id
+FIREBASE_MEASUREMENT_ID=your-measurement-id
+```
+
+4. **NEVER commit the `.env` file to git!** (it's already in .gitignore)
+
+The app will automatically load these credentials from the `.env` file.
 
 ## 5. Firestore Security Rules (For Development)
 
